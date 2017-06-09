@@ -5,7 +5,7 @@ Simple tutorial for setting up ```NodeJS``` environment for development with <a 
 
 This tutorial assumes that you have ```docker-ce``` and ```docker-compose``` installed on your local machine.
 
-If you have both ```docker-ce``` and ```docker-compose``` installed, you can verify it by running these commands in your terminal
+If you have both ```docker-ce``` and ```docker-compose``` installed, you can verify it by running this command in your terminal
 
 ``` docker --version && docker-compose --version ```
 
@@ -31,7 +31,7 @@ npm install express nodemon --save
 
 ```json
 "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon server.js"
   }
 ```
 
@@ -135,14 +135,3 @@ Here, -p flag maps your local machines ```3000``` port to ```docker0```'s port e
 Your awesome enterprise level NodeApp is up and running! 
 
 ``` curl -i http://localhost:3000/ ``` returns ``` Hello world ``` 
-
-
-
-
-
-
-
-
-
-
-
