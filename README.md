@@ -108,7 +108,7 @@ COPY . /app
 EXPOSE 3000
 ```
 
-## Building and Running the ```Docker Image ```
+## Building and Running the Docker Image
 
 
 ``` docker build -t noddocker:1 . ``` 
