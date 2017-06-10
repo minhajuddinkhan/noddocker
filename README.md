@@ -1,5 +1,5 @@
 
-<div style="text-align:center"><img src ="https://www.statusq.org/wp-content/uploads/2014/06/fbbb494a7eef5f9278c6967b6072ca3e.png" /></div>
+<div style="text-align:right"><img src ="https://www.statusq.org/wp-content/uploads/2014/06/fbbb494a7eef5f9278c6967b6072ca3e.png" /></div>
 
 
 
