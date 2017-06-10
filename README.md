@@ -126,6 +126,7 @@ sudo vim /etc/NetworkManager/NetworkManager.conf
 ```
 
 Comment out the “dns=dnsmasq” line by putting a hash “#” in front it.
+example being ``` # dns=dnsmasq ```
 
 ``` sudo service network-manager restart 
 sudo service docker restart
@@ -137,9 +138,37 @@ sudo service docker restart
 
 Here, -p flag maps your local machines ```3000``` port to ```docker0```'s port exposed in the ```Dockerfile```.
 
+# docker-compose
+
+docker compose lets you build, install all dependencies and run your image with a single command!
+
+all we have to do is to ``` touch docker-compose.yml ```  and ``` vim docker-compose.yml ```
+
+and add these amazing lines of magic.
+
+```
+# create a docker-compose.yml file
+version: "2"
+services:
+  web:
+    build: .
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000"
+```      
+
+this yaml file will compose the image if not present, mount in the ```/app``` directory and run the image in our container.
+Now all you gotta do is clone the repo and run ``` docker-compose up ``` and you're ready for development.
+
+
 
 # Finally
 
-Your awesome enterprise level NodeApp is up and running! 
+To setup and run, just type in ``` docker-compose up ```
+
+and your awesome enterprise level NodeApp is up and running! 
+
+
 
 ``` curl -i http://localhost:3000/ ``` returns ``` Hello world ``` 
