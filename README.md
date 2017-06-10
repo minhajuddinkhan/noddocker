@@ -112,6 +112,8 @@ EXPOSE 3000
 
 
 ``` docker build -t noddocker:1 . ``` 
+
+
 Note:- the . at the indicates the current directory where Dockerfile is located
 
 the -t flag will tag this image as noddocker and run the steps provided in the ``` Dockerfile ``` we created above. 
