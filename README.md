@@ -1,5 +1,11 @@
-# noddocker
+
+<div style="text-align:center"><img src ="https://www.statusq.org/wp-content/uploads/2014/06/fbbb494a7eef5f9278c6967b6072ca3e.png" /></div>
+
+
+
+# noddocker 
 Simple tutorial for setting up ```NodeJS``` environment for development with <a href="https://docs.docker.com/" target="_blank">Docker</a>
+
 
 ## Getting started
 
