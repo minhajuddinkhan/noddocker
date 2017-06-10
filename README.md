@@ -23,7 +23,7 @@ docker-compose version 1.13.0, build 1719ceb
 ```
 Please go to the official <a href="https://docs.docker.com/" target="_blank">Docker</a> website and install them if you don't.
 
-## Initializing package.json.
+## Initializing package.json
 
 ```javascript
 
