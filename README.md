@@ -118,16 +118,6 @@ Note:- the . at the indicates the current directory where Dockerfile is located
 
 the -t flag will tag this image as noddocker and run the steps provided in the ``` Dockerfile ``` we created above. 
 
-### Note: ubuntu 14.04 
-If your container fails to establish a network connection (can be tested with ``` ping ``` or ``` curl ```), then you have to remove your dns mask. 
-
-```
-sudo vim /etc/NetworkManager/NetworkManager.conf
-```
-
-Comment out the “dns=dnsmasq” line by putting a hash “#” in front it.
-example being ``` # dns=dnsmasq ```
-
 ``` sudo service network-manager restart 
 sudo service docker restart
 ```
